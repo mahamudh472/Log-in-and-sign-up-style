@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="login logsign">
+                LogIn!
+            </div>
+            <div class="signup logsign">
+                SignUp
+            </div>
+        </div>
+        <div class="login_form">
+            <input type="text" placeholder="Username" id="text"><br>
+            <input type="password" placeholder="Password" id="text"><br>
+            <input type="checkbox" name="" id=""> Remember me <br>
+            <input type="button" value="Login"  id="btn">
+        </div>
+        <div class="signup_form">
+            <input type="text" placeholder="Full name" id="text"><br>
+            <input type="text" placeholder="Username" id="text" required><br>
+            <input type="email" placeholder="example@mail.com" id="text"><br>
+            <input type="password" placeholder="Password" id="text"><br>
+            <input type="password" placeholder="Repeat Password" id="text"><br>
+            
+            <input type="checkbox" name="" id="" align="left"> I have accepted terms and conditions <br>
+            <input type="button" value="SignUp"  id="btn2">
+        </div>
+    </div>
+    <span class="checkmark">
+        <div class="checkmark_circle"></div>
+        <div class="checkmark_stem"></div>
+        <div class="checkmark_kick"></div>
+    </span>
+
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        let done = document.getElementsByClassName('checkmark');
+        btn.addEventListener('click', () => {
+            document.getElementsByClassName('main-container')[0].style.display="none";
+            done[0].classList.add('done')
+        })
+        let login = document.getElementsByClassName('login')[0];
+        let signup = document.getElementsByClassName('signup')[0];
+        signup.addEventListener('click', ()=>{
+            signup.classList.add('s_signup')
+            login.classList.add('s_login')
+            signup.classList.remove('signup')
+            login.classList.remove('login')
+
+            // change the form 
+            document.getElementsByClassName('signup_form')[0].style.display='block';
+            document.getElementsByClassName('login_form')[0].style.display='none';
+            
+            
+
+        })
+        login.addEventListener('click', ()=>{
+            signup.classList.remove('s_signup')
+            login.classList.remove('s_login')
+            login.classList.add('login')
+            signup.classList.add('signup')
+            document.getElementsByClassName('signup_form')[0].style.display='none';
+            document.getElementsByClassName('login_form')[0].style.display='block';
+            
+        })
+        let btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click', ()=>{
+            signup.classList.remove('s_signup')
+            login.classList.remove('s_login')
+            login.classList.add('login')
+            signup.classList.add('signup')
+            document.getElementsByClassName('signup_form')[0].style.display='none';
+            document.getElementsByClassName('login_form')[0].style.display='block';
+            
+        })
+
+    </script>
+</body>
+
+</html>

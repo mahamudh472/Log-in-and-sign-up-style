@@ -1,0 +1,166 @@
+*{
+    font-family: serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    background-color: rgb(209, 206, 206);
+}
+.main-container{
+    
+    width: 35%;
+    position: relative;
+    margin: auto;
+    border: 1px solid silver;
+    padding: 20px;
+    
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    min-height: 270px;
+}
+.header{
+    
+    display: flex;
+}
+.logsign{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* when login is selected */
+.login{
+    border: 1px solid rgb(210, 205, 205);
+    border-bottom: 0;
+    border-top: 2px solid green;
+    border-radius: 4px 4px 0 0;
+}
+.signup{
+    border: 1px solid rgb(207, 203, 203);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.login_form{
+    text-align: center;     
+    border: 1px solid rgb(221, 221, 221);
+    border-top: 0;
+    padding: 10px;
+    padding-top: 40px;
+    border-radius: 0 0 4px 4px;
+   
+}
+#text{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+
+}
+#btn{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* code for done icon */
+
+.checkmark {
+    display:inline-block;
+    width: 176px;
+    height:176px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    display: none;
+
+}
+
+.checkmark_circle {
+    position: absolute;
+    width:176px;
+    height:176px;
+    background-color: green;
+    border-radius:88px;
+    left:0;
+    top:0;
+    box-shadow: 5px 2px 5px 0 gainsboro;
+}
+
+.checkmark_stem {
+    position: absolute;
+    width:24px;
+    height:72px;
+    background-color:#fff;
+    left:88px;
+    top:48px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width:24px;
+    height:24px;
+    background-color:#fff;
+    left:64px;
+    top:96px;
+    
+}
+
+.done{
+    position: relative;
+    margin-left: 40%;
+    display: block;
+    top: 60px;
+}
+
+/* when selected signup */
+.signup_form{
+         
+    border: 1px solid rgb(221, 221, 221);
+    border-top: 0;
+    padding: 10px;
+    padding-top: 40px;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    
+}
+.s_login{
+    border: 1px solid rgb(207, 203, 203);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.s_signup{
+    border: 1px solid rgb(210, 205, 205);
+    border-bottom: 0;
+    border-top: 2px solid green;
+    border-radius: 4px 4px 0 0;
+}
+#btn2{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
